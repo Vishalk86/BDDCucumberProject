@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="44.24" tests="3" skipped="0" failures="1" errors="0">
+<testcase classname="Login" name="Successful Login with Valid Credentials" time="22.927">
+<system-out><![CDATA[
+Given User Launch Chrome Browser............................................passed
+When User opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enters Email as "admin@yourstore.com" and Password as "admin"......passed
+And Click on Login..........................................................passed
+Then Page Title should be "Dashboard / nopCommerce administration"..........passed
+When User click on Log out link.............................................passed
+Then Page Title should be "Your store. Login"...............................passed
+Then Close browser..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Successful Login with Valid Credentials (Data Driven Testing) - Example #1.1" time="14.905">
+<system-out><![CDATA[
+Given User Launch Chrome Browser............................................passed
+When User opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enters Email as "admin@yourstore.com" and Password as "admin"......passed
+And Click on Login..........................................................passed
+Then Page Title should be "Dashboard / nopCommerce administration"..........passed
+When User click on Log out link.............................................passed
+Then Page Title should be "Your store. Login"...............................passed
+Then Close browser..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Successful Login with Valid Credentials (Data Driven Testing) - Example #1.2" time="6.01">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at StepDefinition.StepDef.page_title_should_be(StepDef.java:97)
+	at ✽.Page Title should be "Dashboard / nopCommerce administration"(file:///C:/Users/hp/eclipse-workspace/CucumberFramework/./Features/LoginFeature.feature:22)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User Launch Chrome Browser............................................passed
+When User opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enters Email as "admin@yourstore.com123" and Password as "admin"...passed
+And Click on Login..........................................................passed
+Then Page Title should be "Dashboard / nopCommerce administration"..........failed
+When User click on Log out link.............................................skipped
+Then Page Title should be "Your store. Login"...............................skipped
+Then Close browser..........................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

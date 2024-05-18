@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+ <configuration>
+   <!-- report theme= standar, dark -->
+   <theme>standard</theme>
+   
+   <!-- document encoding = dafault to UTF-8 -->
+   <encoding>UTH-8</encoding>
+   
+   <!-- protocol for script and stylesheet = dafault to https-->
+   <protocol>https</protocol>
+   
+   <!-- title of the document-->
+   <documentTitle>Title - Cucumber Framework Report Document</documentTitle>
+   
+   <!-- report name = displayed at top-nav-->
+   <reportName>Cucumber Test Report</reportName>
+   
+   <!-- global date format override = default to yyyy:mm:dd-->
+   <dateFormat>yyyy-MM-dd</dateFormat>
+   
+   <!-- global date format override = default to HH:mm:ss-->
+   <dateFormat>HH:mm:ss</dateFormat>
+   
+   <!--custom javascript-->
+   <scripts>
+   <![CDATA[
+   $(document).ready(function(){
+   
+   });
+   ]]>   
+   </scripts>
+   
+   <!--custom styles-->
+   <styles>
+    <![CDATA[
+    ]]>
+   </styles>
+ </configuration>
+</extentreports>
